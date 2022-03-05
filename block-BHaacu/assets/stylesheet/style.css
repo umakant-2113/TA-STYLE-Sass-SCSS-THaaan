@@ -1,0 +1,378 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+ margin: 0;
+ padding: 0;
+ border: 0;
+ font-size: 100%;
+ font: inherit;
+ vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+ display: block;
+}
+body {
+ line-height: 1;
+}
+ol, ul {
+ list-style: none;
+}
+blockquote, q {
+ quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+ content: '';
+ content: none;
+}
+table {
+ border-collapse: collapse;
+ border-spacing: 0;
+}
+/* custome style */
+*{
+    box-sizing: border-box;
+}
+a{
+  text-decoration: none;  
+}
+body{
+ font-family: 'Archivo', sans-serif;
+ font-size: 16px;
+ line-height: 1;
+}
+.container{
+    max-width: 1370px;
+    width: 1200px;
+    margin: 0 auto;
+    padding:  0 2rem;
+    /* border: 1px solid black; */
+}
+.full-width{
+    width: 100%;
+    /* height: 200px; */
+}
+.full-width1{
+    width: 100%;
+    height: 100px;
+}
+.flex-between{
+display: flex;
+justify-content: space-between;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-50{
+    flex: 0 1 50%;
+    /* border: .5px solid grey; */
+}
+.flex-100{
+    flex: 0 1 100%;
+}
+.flex-23{
+    /* border: 1px solid black; */
+    flex: 0 1 23%;
+}
+.flex-30{
+    flex: 0 1 30%;
+    /* border:1px solid red; */
+    box-shadow: 2px 2px 5px grey;
+    border: .5px solid grey;
+}
+.flex-75{
+    flex: 0 1 75%;
+    /* border: 2px solid blue; */
+}
+.flex-25{
+    flex: 0 1 25%;
+    /* border: 2px solid blueviolet; */
+}
+.flex-16{
+    flex :0 1 14%;
+    /* padding: 0 .5rem; */
+}
+.btn{
+    font-size: 1rem;
+    padding: .8rem 1.2rem;
+    display: inline-block;
+    text-align: center;
+}
+/* general style */
+.header{
+   background-color: rgb(220,60,69); 
+   padding: .5rem 2rem;
+}
+.header a{
+    color: white;
+    padding-right: 1rem;
+}
+.nav-item {
+    display: flex;
+    margin: .5rem 0;
+    
+
+}
+.brand-header{
+    background-color: rgb(242,242,242);
+    padding:.5rem 2rem;
+}
+.brand{
+    color: crimson;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+strong{
+    color: rgb(69, 71, 80);
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.nav-item li{
+    padding-left: 2rem;
+  
+}
+.nav-item a{
+    color: rgb(69, 71, 80);
+}
+
+/* hero section */
+.hero-article{
+    position: absolute;
+    top: 21rem;
+    bottom: 0;
+    left: 21rem;
+}
+.hero-article h1{
+    font-size: 3rem;
+    font-weight: 900;
+    color: rgb(34,37,43);
+}
+.hero-article button{
+    background-color:rgb(220,60,69);
+    padding: .4rem .8rem;
+    border: none;
+    border-radius: 20px;
+    
+}
+.hero-article p{
+    margin: 1rem 0;
+}
+.hero-article a{
+    color: white;
+}
+/* our service */
+.service-sec{
+    margin-top: 4rem;
+}
+.service-sec article{
+    text-align: center;
+}
+.service-sec h2{
+    font-size: 2rem;
+    font-weight: 800;
+    color: rgb(34,37,43);
+}
+.service-article p{
+    margin: 1rem 0 4rem 0;
+    color: rgb(197,200,203);
+    
+}
+.service-h3{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: rgb(69, 71, 80);
+    margin: 1rem 0;
+}
+.service-p{
+    color: rgb(153, 153, 153);
+    line-height: 1.4;
+}
+.service-p~button{
+    margin: 1.5rem 0 2rem 0;
+    padding: .5rem 1rem;
+    border: 1px solid crimson;
+    border-radius: 20px;
+}
+.service-btn a{
+color: crimson;
+}
+/* solution section */
+
+.solution-section{
+    margin-top: 3rem;
+}
+.solution-article{
+    text-align: center;
+    background-color: rgb(234, 237, 240);
+
+}
+.solution-article h2{
+    font-size: 1.8rem;
+    margin: 1rem;
+    font-weight: 900;
+    color:rgb(69, 71, 80) ;
+    margin: 3rem 0 1.5rem 0;
+
+}
+.solution-article p{
+    line-height: 1.5;
+    vertical-align: center;
+    width: 70%;
+    margin: 0 0rem 2rem 10rem;
+    color:rgb(182, 180, 180) ;
+}
+.solution-article button{
+    padding: .5rem 1rem;
+    border-radius: 20px;
+    border: 1px solid crimson;
+    margin: 0 0  2.5rem 0;
+}
+/* consulting solution */
+
+.consulting-section{
+    margin: 3rem 0;
+}
+.Consulting-arti{
+    text-align: center;
+}
+.Consulting-arti img{
+    margin: 0 0 1.5rem 0;
+}
+.Consulting-arti h2{
+    font-size: 1.6rem;
+    font-weight: 900;
+    color:rgb(69, 71, 80);
+    /* margin-bottom: 1.4rem; */
+    line-height: 1.4;
+}
+.Consulting-arti p{
+    color: rgb(182, 180, 180);
+    width: 70%;
+    margin: 1.4rem auto;
+}
+.Consulting-arti button{
+    padding: .5rem 1rem;
+    border: 1px solid crimson;
+    border-radius: 20px;
+}
+.Consulting-arti a{
+    color: crimson;
+}
+.bes-business-sec{
+    margin: 3rem 0;
+}
+.Bussiness-article{
+    padding: 2rem 2rem;
+    background-color: rgb(220,60,69);
+}
+.Bussiness-article h4{
+    font-size: 1.1rem;
+    color: white;
+    line-height: 1.5;
+}
+.Bussiness-article p{
+    color: rgb(219, 208, 208);
+    font-size: 13px;
+    line-height: 1.3;
+}
+.busi-btn{
+    padding: .5rem 1rem;
+    border-top: 2px solid white;
+    border-left: .6px solid white;
+    border-right: .6px solid white;
+    border-bottom: .7px solid white;
+    background-color: crimson;
+    border-radius: 20px;
+}
+.busi-btn a{
+    color: white;
+}
+.leader-section h3{
+font-size: 2rem;
+font-weight: 800;
+color: rgb(69, 71, 80);
+line-height: 1.4;
+/* margin-top: 4rem; */
+margin: 3rem auto;
+}
+.leader-section p{
+    line-height: 1.4;
+    width: 85%;
+    color: grey;
+}
+.client-section{
+    background-color: rgb(234,237,240);
+    padding: 4rem 0;
+}
+.client-section h2{
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: 800;
+    color: rgb(69, 71, 80);
+}
+.box{
+    filter: grayscale(100%);
+}
+/* footer section */
+.footer{
+    background-color: rgb(52,58,64);
+    padding: 2rem 3rem;
+}
+
+.footer a{
+    color:grey;
+}
+.footer h4{
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: aliceblue;
+}
+.footer li{
+    margin: .8rem 0;
+}
+.footer-nav{
+    display: flex;
+}
+.footer-nav a{
+    padding-right: 2rem;
+}
+.footer-div{
+    text-align: center;
+    font-size: 12px;
+    color: grey;
+}
+/* responsive layout */
+@media screen and(max-width:768px) {
+    html{
+        font-size: 12px;
+    }
+    .flex-wrap{
+        flex-wrap: wrap;
+    }
+    .sm-flex-100{
+        flex: 0 1 100%;
+    }
+}
+
+
+
